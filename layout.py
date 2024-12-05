@@ -39,6 +39,12 @@ class Ui_Dialog(object):
         self.auStudentLabel = QtWidgets.QLabel(parent=self.gridLayoutWidget)
         self.auStudentLabel.setObjectName("auStudentLabel")
         self.gridLayout.addWidget(self.auStudentLabel, 1, 0, 1, 1)
+        self.acceptButton = QtWidgets.QPushButton(parent=self.gridLayoutWidget)
+        self.acceptButton.setStyleSheet("background-color: red;\n"
+"font-weight:  bold;\n"
+"color: white;")
+        self.acceptButton.setObjectName("acceptButton")
+        self.gridLayout.addWidget(self.acceptButton, 2, 0, 1, 2)
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -59,3 +65,4 @@ class Ui_Dialog(object):
         item.setText(_translate("Dialog", "Kajetan \"Kasztan\" Kafka"))
         self.studentLW.setSortingEnabled(__sortingEnabled)
         self.auStudentLabel.setText(_translate("Dialog", "Zaplanowany sierpien"))
+        self.acceptButton.setText(_translate("Dialog", "Zapisz wyrok"))
